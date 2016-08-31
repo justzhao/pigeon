@@ -1,8 +1,8 @@
 .classpath
 .classpath*
 .project
-.settings/
-.logs/
-target/
-bin/
-sets/
+/.settings
+/.logs
+/target
+/bin
+/sets
