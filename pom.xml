@@ -14,7 +14,7 @@
 	<inceptionYear>2010.08</inceptionYear>
 	<properties>
 		<pigeon.version>${project.version}</pigeon.version>
-		<spring_version>2.5.6</spring_version>
+		<spring_version>3.2.7.RELEASE</spring_version>
 		<jetty_version>6.1.26</jetty_version>
 	</properties>
 	<modules>
@@ -345,7 +345,7 @@
 		</resources>
 		<!-- <filters> <filter>${user.home}/config.properties</filter> </filters> -->
 	</build>
-	<reporting>
+<!--	<reporting>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -457,9 +457,9 @@
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>2.7</version>
 				<configuration>
-					<dependencyLocationsEnabled>false</dependencyLocationsEnabled><!-- waiting 
-						for MPIR-267 -->
-					<!-- pin down urls to to avoid interpolation in the modules -->
+					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>&lt;!&ndash; waiting
+						for MPIR-267 &ndash;&gt;
+					&lt;!&ndash; pin down urls to to avoid interpolation in the modules &ndash;&gt;
 					<webAccessUrl>${maven.surefire.scm.url}</webAccessUrl>
 					<anonymousConnection>${maven.surefire.scm.devConnection}</anonymousConnection>
 					<developerConnection>${maven.surefire.scm.devConnection}</developerConnection>
@@ -498,5 +498,5 @@
 				<version>2.9.1</version>
 			</plugin>
 		</plugins>
-	</reporting>
+	</reporting>-->
 </project>

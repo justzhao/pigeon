@@ -17,12 +17,12 @@ import com.dianping.pigeon.config.spring.BeanDefinitionParserLoader;
  */
 public class ProviderBeanDefinitionParserLoader implements BeanDefinitionParserLoader {
 
-	@Override
-	public Map<String, BeanDefinitionParser> loadBeanDefinitionParsers() {
-		Map<String, BeanDefinitionParser> parsers = new HashMap<String, BeanDefinitionParser>();
-		parsers.put("service", new ServiceBeanDefinitionParser(SingleServiceBean.class, true));
-		parsers.put("server", new ServerBeanDefinitionParser(ServerBean.class, false));
-		return parsers;
-	}
+		@Override
+		public Map<String, BeanDefinitionParser> loadBeanDefinitionParsers() {
+			Map<String, BeanDefinitionParser> parsers = new HashMap<String, BeanDefinitionParser>();
+			parsers.put("service", new ServiceBeanDefinitionParser(SingleServiceBean.class, true));
+			parsers.put("server", new ServerBeanDefinitionParser(ServerBean.class, false));
+			return parsers;
+		}
 
 }
